@@ -1,0 +1,533 @@
+/*============================
+
+Universal Styling
+
+*=========================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body{
+  background-color: #f6e3da;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.desktop-nav{
+	display: none;
+}
+
+/************************** Hamburger menu *********************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding: 1px 10px 0px 15px;
+  color:#f7e5db;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:1px 15px 0px 15px;
+  color:#f7e5db;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f7e5db;  position:absolute; text-align:center; font-size:1em;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;  background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#534836;}
+.menu ul li a:hover {  color: #b15e36;  text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/************************** Hamburger menu END **************************************/
+
+header{
+	background-color: #935152;
+}
+
+.logo{
+	width: 50%;
+	max-width: 250px;
+	margin: auto;
+}
+
+header img{
+	width: 100%;
+	margin: auto;
+}
+
+.hero{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+figure img{
+	position: relative;
+	width: 100%;
+}
+
+figcaption {
+	color: white;
+	font-style: italic;
+	background-color: #935152;
+	text-align: right;
+	padding-right: 1%;
+}
+
+.flex-services{
+	margin: 2%;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.services{
+	color: #534836;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5% 10% 2%;
+	margin: 1%;
+	text-align: center;
+	border: 4px solid #b15f36;
+}
+
+.services h2{
+	font-family: "continuo", sans-serif;
+	font-size: 2.4em;
+	padding-bottom: 1%;
+}
+
+.services ul,
+.services p{
+	list-style-type: none;
+	padding-bottom: 2%;
+	font-size: 1.1em;
+}
+
+.mobile-service{
+	display: flex;
+	justify-content: center;
+}
+
+.headshot_home,
+.grad_home{
+	display: inline-block;
+	position: relative;
+	padding: 2%
+}
+
+.headshot_home img,
+.grad_home img{
+	width: 100%;
+}
+
+.headshot_home a,
+.grad_home a{
+	margin: auto;
+	position: absolute;
+	top: 70%; left: 0; bottom: 0; right: 0;
+	text-decoration: none;
+	font-family: "continuo", sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: .5em;
+	max-height: 20px;
+	width: 70%;
+	max-width: 175px;
+	padding:2.6% 2.4% 2.4%;
+	background: #c79783;
+	color: #f7e5db;
+	border: 4px solid #b15e36;
+	transition: .3s;
+}
+
+.headshot_home a:hover,
+.grad_home a:hover {
+	color: #f7e5db;
+	background-color: #935152;
+	transition: .3s;
+}
+
+.home-quote {
+	background-color: #c79783;
+	text-align: center;
+	padding: 5%;
+	font-size: 1.5em
+}
+
+.home-quote p{
+	width: 70%;
+	margin: auto;
+	color: #534836;
+}
+
+.bottom-meet-noa{
+	display: flex;
+	justify-content: center;
+	max-width: 1500px;
+	margin: auto;
+
+}
+
+.bottom-meet-noa img{
+	display: none;
+}
+
+.bottom-meet-noa aside{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 4%;
+	color: #534836;
+	width: 100%;
+	margin: 5%;
+	border: 4px solid #b15f36;
+}
+
+.bottom-meet-noa aside a {
+  display: block;
+  margin: 2% auto;
+  text-decoration: none;
+  font-family: "continuo", sans-serif;
+	font-size: 1.2em;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 200px;
+  padding: 2%;
+  background: #c79783;
+  color: #f7e5db;
+  border: 4px solid #b15e36;
+  transition: .3s;
+}
+
+aside a:hover {
+	background-color: #935152;
+  transition: .3s;
+}
+
+.bottom-meet-noa h2{
+	font-family: "continuo", sans-serif;
+	font-size: 2.4em;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.bottom-meet-noa p{
+	padding-bottom: 1.5%;
+	text-align: center;
+}
+
+.images-bottom{
+	display: flex;
+	align-content: center;
+}
+
+.flex-images{
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: flex-start;
+}
+
+.flex-images img{
+	max-height: 100%;
+	object-fit: contain;
+	width: 25%;
+}
+
+/*============================
+
+Portfolio pages
+
+*=========================*/
+
+.top-portfolio{
+	padding: 2%;
+	color: #534836;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+
+.top-portfolio h1{
+	font-family: "continuo", sans-serif;
+	font-size: 2.4em;
+	padding-bottom: 1%;
+}
+
+.top-portfolio p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-size: .5em;
+	padding-bottom: 1%;
+}
+
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.portfolio-images{
+	max-width: 1400px;
+	margin: auto;
+	padding: 0 1% 1%;
+}
+
+.portfolio-images img{
+	padding: 1% 2.5%;
+	width: 95%;
+}
+
+/*============================
+
+  Footer Styling
+
+*=========================*/
+footer {
+  background: #c79783;
+  color: #534836;
+}
+
+footer h3 {
+  font-family: "continuo", sans-serif;
+	font-size: 1.8em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer .icons {
+  text-align: center;
+  font-size: 45px;
+  padding: 0 1% 1%;
+}
+
+footer .fa-envelope,
+footer .fa-instagram {
+  color: #534836;
+  transition: .3s;
+}
+
+footer .fa-envelope:hover,
+footer .fa-instagram:hover {
+  color: #f7e5db;
+  transition: .3s;
+}
+
+footer a:visited {
+  color: #534836;
+  text-decoration: none;
+}
+
+footer h3::selection {
+  color: #f7e5db;
+}
+
+/***************************** START 400px MEDIA QUERY ****************************/
+@media(min-width:400px) {
+
+.portfolio-images{
+	display: flex;
+}
+
+.top-portfolio{
+	padding: 2% 2% 0;
+	color: #534836;
+	text-align: center;
+	margin: auto;
+	width: 65%;
+}
+}
+
+/***************************** START 500px MEDIA QUERY ****************************/
+@media(min-width:500px) {
+
+
+.flex-services{
+	display: flex;
+	justify-content: center;
+}
+
+
+.services{
+	margin: 2%;
+	padding: 1%;
+	font-size: .8em;
+}
+
+.headshot_home{
+	margin: 1%
+}
+
+.grad_home{
+	margin: 1% 1% 1% 0;
+}
+
+.services h2{
+	font-family: "continuo", sans-serif;
+	padding: 1% 2% 0;
+}
+
+.services ul,
+.services p{
+	list-style-type: none;
+	padding: 2%;
+}
+
+.headshot_home img,
+.grad_home img{
+	width: 100%;
+}
+
+	.headshot_home,
+	.grad_home{
+		display: flex;
+		flex-direction: column;
+	}
+	}
+
+
+/***************************** START MIN 650px MEDIA QUERY ****************************/
+@media(min-width:650px) {
+
+/*****************************************NAVIGATION********************************/
+.desktop-nav{
+	display: block;
+	display: flex;
+	justify-content: center;
+	background-color: #ecbdb3;
+	padding: .5%;
+}
+
+.hamburger,
+.cross,
+.menu {
+	display:none;
+}
+
+.desktop-nav ul li {
+	display: inline;
+}
+
+.desktop-nav a {
+	text-decoration: none;
+	color: #935152;
+	padding: 11px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+header nav a:hover {
+	color: #534836;
+	transition: .3s;
+}
+
+
+.services ul,
+.services p{
+	font-size: 1.4em;
+}
+
+.home-quote p{
+	width: 50%;
+}
+
+.bottom-meet-noa img{
+	display: block;
+	width: 40%;
+	margin: auto 3%;
+}
+
+.bottom-meet-noa aside{
+	margin: 3% 3% 3% 0;
+}
+
+.flex-images{
+	display:flex;
+	justify-content: center;
+}
+
+.flex-images img{
+	width: 12.5%;
+}
+
+/*============================
+
+Headshot Styling
+
+*=========================*/
+
+.portfolio-images{
+	display: block;
+}
+
+.headshot-row{
+	display: flex;
+}
+
+}
+/***************************** START MAX WIDTH 833px MEDIA QUERY ****************************/
+@media(max-width:826px) {
+	.bottom-meet-noa{
+		align-content: flex-start;
+	}
+
+	.meet-noa{
+		margin: auto 3%;
+	}
+
+}
+
+/***************************** START MIN WIDHT 840px MEDIA QUERY ****************************/
+@media(min-width:840px) {
+
+.bottom-meet-noa img{
+	display: block;
+	width: 40%;
+	margin: 3%;
+}
+
+.bottom-meet-noa aside{
+	margin: 3% 3% 3% 0;
+}
+
+}
