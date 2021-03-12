@@ -330,6 +330,21 @@ Portfolio pages
 
 /*============================
 
+ Contact Page Styling
+
+*=========================*/
+.contact{
+	margin: auto;
+}
+.contact img{
+	width: 60%;
+	padding: 15px;
+	border: 5px solid #ecbdb3;
+	margin: auto;
+}
+
+/*============================
+
   Footer Styling
 
 *=========================*/
