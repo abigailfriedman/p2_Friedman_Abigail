@@ -305,13 +305,15 @@ Portfolio pages
 	justify-content: center;
 }
 
-.portfolio-images{
+.portfolio-images,
+.portfolio-images-grad{
 	max-width: 1400px;
 	margin: auto;
 	padding: 0 1% 1%;
 }
 
-.portfolio-images img{
+.portfolio-images img,
+.portfolio-images-grad img{
 	padding: 1% 2.5%;
 	width: 95%;
 }
@@ -365,6 +367,46 @@ footer h3::selection {
 
 .portfolio-images{
 	display: flex;
+}
+
+.portfolio-images-grad{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item1{
+	order: 1;
+	width: 50%;
+}
+
+.item2{
+	order: 3;
+}
+.item3{
+	order: 2;
+	width: 50%;
+}
+.item4{
+	order: 4;
+	width: 50%;
+}
+.item5{
+	order: 5;
+	width: 50%;
+}
+.item6{
+	order: 6;
+}
+.item7{
+	order: 9;
+}
+.item8{
+	order: 7;
+	width: 50%;
+}
+.item9{
+	order: 8;
+	width: 50%;
 }
 
 .top-portfolio{
@@ -503,7 +545,66 @@ Headshot Styling
 .headshot-row{
 	display: flex;
 }
+}
+/***************************** START MIN 750px MEDIA QUERY ****************************/
+@media(min-width:770px) {
+/*============================
 
+GRAD Styling
+
+*=========================*/
+.portfolio-images-grad a{
+	object-fit: fill;
+	align-content: center;
+}
+
+
+.item1{
+	order: 1;
+	width: 25%;
+
+}
+
+.item2{
+	order: 2;
+	width: 50%;
+
+}
+.item3{
+	order: 3;
+	width: 25%;
+
+
+}
+.item4{
+	order: 4;
+	width: 25%;
+
+}
+.item5{
+	order: 5;
+	width: 25%;
+
+}
+.item6{
+	order: 6;
+	width: 50%;
+}
+
+.item7{
+	order: 7;
+	width: 50%;
+}
+
+.item8{
+	order: 8;
+	width: 25%;
+}
+
+.item9{
+	order: 9;
+	width: 25%;
+}
 }
 /***************************** START MAX WIDTH 833px MEDIA QUERY ****************************/
 @media(max-width:826px) {
