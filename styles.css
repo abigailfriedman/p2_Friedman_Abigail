@@ -333,14 +333,94 @@ Portfolio pages
  Contact Page Styling
 
 *=========================*/
-.contact{
+
+.contact_container{
+	width: 90%;
+	max-width: 500px;
+	margin: 2% auto;
+	color: #534836;
+}
+
+.contact_form{
+	max-width: 500px;
 	margin: auto;
 }
-.contact img{
+
+.contact_form div{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+label {
+  order: 1;
+  width: 10em;
+  text-align: left;
+  padding-right: 0.5em;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+	font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+input, textarea, select {
+  order: 2;
+  flex: 1 1 auto;
+}
+
+.contact_container h1{
+	font-family: "continuo", sans-serif;
+	font-size: 2.4em;
+}
+
+.contact_container p{
+	margin-bottom: 1vh;
+}
+
+.contact_form .message,
+.contact_form .email{
+	margin-top: 2%
+}
+
+.reset input,
+.submit input {
+  background: #c79783;
+  color: #534836;
+  font-family: "continuo";
+  font-size: 1em;
+  border-radius: 4px;
+  padding: 5px 30px;
+  margin-right: 15px;
+  margin-top: 10px;
+  transition: .3s;
+}
+
+.submit input:hover {
+  color: #f7e5db;
+  transition: .3s;
+}
+
+.reset input:hover {
+  color: #f7e5db;
+  transition: .3s;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.contact-image{
+width: 100%;
+margin: 8% 15%;
+}
+
+.contact-image img {
 	width: 60%;
-	padding: 15px;
-	border: 5px solid #ecbdb3;
-	margin: auto;
+	border: 4px solid #935152;
+	padding: 3%;
 }
 
 /*============================
@@ -487,6 +567,12 @@ footer h3::selection {
 	display: flex;
 	flex-direction: column;
 }
+
+main .contact{
+	display: flex;
+	flex-direction: row;
+}
+
 }
 
 

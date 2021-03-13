@@ -60,11 +60,12 @@
 
     <main class="Site-content contact">
 
-      <div class="contact_container">
+      <section class="contact_container">
         <h1>Let's Chat!</h1>
         <p>I would love to talk to talk about how we can work together!</p>
+
         <form class="contact_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-          <div class="name">
+          <div>
             <label for="name" class="label_input_wrap">Name</label>
             <input type="text" name="req_name" id="name" placeholder="Ex: Abigail Friedman" />
           </div>
@@ -76,20 +77,24 @@
 
           <div class="message">
             <label for="message" class="label_input_wrap">Message</label>
-            <textarea name="Message" id="message" rows="8" cols="40" placeholder="Send me dates that work for you for a photoshoot, along with your thoughts and dreams!"></textarea>
+            <textarea name="Message" id="message" rows="6"  placeholder="Send me dates that work for you for a photoshoot, along with your thoughts and dreams!"></textarea>
           </div>
 
-          <div class="submit input-section">
-            <input type="submit" value="Send" />
-          </div>
+          <div class="buttons">
+            <div class="submit input-section">
+              <input type="submit" value="Send" />
+            </div>
 
-          <div class="reset input-section">
-            <input type="reset" value="Refresh" />
+            <div class="reset input-section">
+              <input type="reset" value="Refresh" />
+            </div>
           </div>
         </form>
-      </div>
+      </section>
 
-    <img src='images/meetme_noa_pink.jpg' alt="Noa Michele with some doodles" title="Meet Me Noa Michele" width="200" />
+      <section class="contact-image">
+        <img src='images/meetme_noa_pink.jpg' alt="Noa Michele with some doodles" title="Meet Me Noa Michele" width="200" />
+      </section>
 
     </main>
 
