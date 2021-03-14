@@ -419,7 +419,7 @@ margin: 8% 15%;
 
 .contact-image img {
 	width: 60%;
-	border: 4px solid #935152;
+	border: 4px solid #b15f36;;
 	padding: 3%;
 }
 
@@ -568,9 +568,35 @@ footer h3::selection {
 	flex-direction: column;
 }
 
-main .contact{
+/*============================
+
+ Contact Page Styling
+
+*=========================*/
+.Flex-container{
 	display: flex;
 	flex-direction: row;
+	margin: 1% auto;
+	max-width: 800px;
+}
+
+.contact_container{
+	width: 48%;
+	margin: auto 1%;
+	padding: 2%;
+	order: 2;
+	flex-grow: 4;
+}
+
+.contact-image{
+	width: 35%;
+	margin: 2%;
+	order: 1;
+	flex-grow: 1;
+}
+
+.contact-image img{
+	width: 90%;
 }
 
 }
