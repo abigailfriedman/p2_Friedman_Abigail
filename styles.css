@@ -91,25 +91,34 @@ header img{
 	margin: auto;
 }
 
-
 .hero{
-	width: 100%;
-	height: 70vh;
+	display: none;
 }
 
-figure img{
+.mobile-hero{
+	display: block;
+	width: 100%;
+}
+
+.mobile-hero figure{
 	position: relative;
+}
+
+.mobile-hero figure img{
+	display: block;
 	width: 100%;
 }
 
 figcaption {
 	position: absolute;
-	right: 5px;
-	top: 67vh;
 	color: white;
 	font-style: italic;
 	text-align: right;
-	padding-right: 1%;
+	padding: 1%;
+	width: 100%;
+	background-image: linear-gradient(#f6e3da00, #00000061);
+	bottom: 0;
+	right: 0;
 }
 
 .flex-services{
@@ -607,7 +616,36 @@ footer h3::selection {
 /********************* START MIN 650px MEDIA QUERY ***********************/
 @media(min-width:650px) {
 
-/*****************************************NAVIGATION********************************/
+.mobile-hero{
+	display: none;
+}
+
+.hero{
+	display: block;
+	width: 100%;
+	height: 70vh;
+}
+
+.hero figure{
+	position: relative;
+}
+
+/*.hero figure img{
+	display: block;
+	width: 100%;
+}*/
+
+.hero figcaption {
+	position: absolute;
+	color: white;
+	font-style: italic;
+	text-align: right;
+	padding: 3% 2%;
+	width: 100%;
+	background-image: linear-gradient(#f6e3da00, #00000061);
+	bottom: 0;
+}
+/*********************************NAVIGATION********************************/
 .desktop-nav{
 	display: block;
 	display: flex;
@@ -686,6 +724,7 @@ Headshot Styling
 }
 /****************** START MIN 750px MEDIA QUERY ********************/
 @media(min-width:750px) {
+
 /*============================
 
 GRAD Styling
@@ -747,6 +786,7 @@ GRAD Styling
 }
 /***************************** START MAX WIDTH 833px MEDIA QUERY ****************************/
 @media(max-width:826px) {
+
 	.bottom-meet-noa{
 		align-content: flex-start;
 	}
@@ -771,4 +811,22 @@ GRAD Styling
 	margin: 3% 3% 3% 0;
 }
 
+}
+
+/********* START MIN WIDHT 1050px MEDIA QUERY ****************************/
+@media(min-width:1050px) {
+
+.hero{
+	max-width: 1450px;
+	margin: auto ;
+	height: 100vh;
+}
+}
+
+/********* START MIN WIDHT 1450px MEDIA QUERY ****************************/
+@media(min-width:1450px) {
+
+.hero{
+	margin: 1% auto 0;
+}
 }
