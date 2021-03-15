@@ -421,10 +421,6 @@ input, textarea, select {
   display: inline;
 }
 
-.buttons{
-	padding: 1% 0 0 40%;
-}
-
 .contact-image{
 width: 100%;
 margin: 8% 15%;
@@ -436,6 +432,9 @@ margin: 8% 15%;
 	padding: 3%;
 }
 
+.buttons{
+	padding: 1% 0 0 18%;
+}
 
 .form h1 {
   padding: 100px 0 40px 0;
@@ -553,6 +552,7 @@ footer h3::selection {
 	margin: auto;
 	width: 65%;
 }
+
 }
 
 /********************** START 500px MEDIA QUERY **************************/
@@ -629,6 +629,10 @@ footer h3::selection {
 
 .contact-image img{
 	width: 90%;
+}
+
+.buttons{
+	padding: 1% 0 0 15%;
 }
 
 }
@@ -795,6 +799,11 @@ GRAD Styling
 	order: 9;
 	width: 23.75%;
 }
+
+.buttons{
+	padding: 1% 0 0 40%;
+}
+
 }
 /***************************** START MAX WIDTH 833px MEDIA QUERY ****************************/
 @media(max-width:826px) {
