@@ -264,22 +264,20 @@ aside a:hover {
 	text-align: center;
 }
 
-.images-bottom{
-	display: flex;
-	align-content: center;
+img {
+	max-width: 100%;
 }
 
-.flex-images{
-	flex-grow: 1;
+.image-grid figure{
+	margin-bottom: -8px;
+}
+
+.image-grid{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	align-content: flex-start;
 }
 
-.flex-images img{
-	max-height: 100%;
-	object-fit: contain;
+.image-grid figure{
 	width: 25%;
 }
 
@@ -315,7 +313,7 @@ Portfolio pages
 .top-portfolio p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
-	font-size: .5em;
+	font-size: 1.1em;
 	padding-bottom: .5%;
 	color: #534836;
 }
@@ -630,11 +628,6 @@ footer h3::selection {
 	position: relative;
 }
 
-/*.hero figure img{
-	display: block;
-	width: 100%;
-}*/
-
 .hero figcaption {
 	position: absolute;
 	color: white;
@@ -699,12 +692,8 @@ header nav a:hover {
 	margin: 3% 3% 3% 0;
 }
 
-.flex-images{
-	display:flex;
-	justify-content: center;
-}
 
-.flex-images img{
+.image-grid figure{
 	width: 12.5%;
 }
 
