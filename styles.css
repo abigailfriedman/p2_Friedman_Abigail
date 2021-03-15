@@ -421,6 +421,10 @@ input, textarea, select {
   display: inline;
 }
 
+.buttons{
+	padding: 1% 0 0 40%;
+}
+
 .contact-image{
 width: 100%;
 margin: 8% 15%;
@@ -430,6 +434,25 @@ margin: 8% 15%;
 	width: 60%;
 	border: 4px solid #b15f36;
 	padding: 3%;
+}
+
+
+.form h1 {
+  padding: 100px 0 40px 0;
+  text-align: center;
+	color: #534836;
+}
+
+.form p {
+  font-size: 30px;
+  text-align: center;
+	color: #534836;
+}
+
+.form {
+  background: #f7e5db;
+  width: 100%;
+  position: relative;
 }
 
 /*============================
